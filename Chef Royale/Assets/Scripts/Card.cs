@@ -5,11 +5,13 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     private CardManager cardManager;
+    private GameManager gameManager;
     public bool hasBeenUsed;
 
     private void Start()
     {
         cardManager = FindObjectOfType<CardManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
     public void UseCard() 
     {

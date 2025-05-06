@@ -17,7 +17,11 @@ public class CardManager : MonoBehaviour
 
     private int i;
     private int stage;
-
+    private GameManager gameManager;
+    private void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.D))
@@ -79,6 +83,7 @@ public class CardManager : MonoBehaviour
             case 1:
                 Shuffle(seasoningDeck, 2);
                 stage += 1;
+                gameManager.AddSeasoning();
                 return;
             case 2:
                 Shuffle(equipmentDeck, 2);
