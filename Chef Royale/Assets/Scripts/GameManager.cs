@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     CardManager cardManager;
     public float dishScore;
     public float stamina;
+    public bool gameStarted;
     void Start()
     {
         cardManager = FindObjectOfType<CardManager>();

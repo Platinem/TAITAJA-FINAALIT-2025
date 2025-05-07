@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5945564026682816098}
   - component: {fileID: 5797662610108976258}
   - component: {fileID: 4921187717795584662}
+  - component: {fileID: 1325780084009958803}
   m_Layer: 0
   m_Name: Egg fried rice card
   m_TagString: Untagged
@@ -66,6 +67,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
+  originalTransform: {fileID: 0}
 --- !u!114 &5797662610108976258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,6 +110,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 5945564026682816098}
+          m_TargetAssemblyTypeName: Card, Assembly-CSharp
+          m_MethodName: SelectCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &4921187717795584662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,6 +139,18 @@ MonoBehaviour:
   staminaText: {fileID: 2471983857964416459}
   foodQuality: 19
   staminaUsage: 11
+--- !u!225 &1325780084009958803
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094955104634346810}
+  m_Enabled: 1
+  m_Alpha: 0.97
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1315027735422953729
 GameObject:
   m_ObjectHideFlags: 0

@@ -567,6 +567,7 @@ GameObject:
   - component: {fileID: 4864548443056725795}
   - component: {fileID: 4307498216706747039}
   - component: {fileID: 321016896102192832}
+  - component: {fileID: -8430320504188578759}
   m_Layer: 0
   m_Name: Chili card
   m_TagString: Untagged
@@ -620,6 +621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
 --- !u!114 &321016896102192832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +663,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &-8430320504188578759
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7157073097840611731}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &7939857798186929571
 GameObject:
   m_ObjectHideFlags: 0

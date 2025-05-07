@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 9109904248629823195}
   - component: {fileID: 6933026431737899531}
   - component: {fileID: 853731350738738781}
+  - component: {fileID: -2053316943867962287}
   m_Layer: 0
   m_Name: Non-stick pan
   m_TagString: Untagged
@@ -200,6 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
 --- !u!114 &853731350738738781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +243,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &-2053316943867962287
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2436881259748884587}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &3367064213957542092
 GameObject:
   m_ObjectHideFlags: 0

@@ -508,6 +508,7 @@ GameObject:
   - component: {fileID: 2634113076415584071}
   - component: {fileID: 4128061125056766685}
   - component: {fileID: -7027825948323439584}
+  - component: {fileID: -8412308907209729940}
   m_Layer: 0
   m_Name: Smoke card
   m_TagString: Untagged
@@ -560,6 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
 --- !u!114 &4128061125056766685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,3 +618,15 @@ MonoBehaviour:
   type: 4
   staminaUsage: 10
   staminaText: {fileID: 7783005401280363919}
+--- !u!225 &-8412308907209729940
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8640675464813135862}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0

@@ -507,6 +507,7 @@ GameObject:
   - component: {fileID: 7137261880387431510}
   - component: {fileID: 3298449775079102767}
   - component: {fileID: 3975254186022643057}
+  - component: {fileID: 4590407358528183892}
   m_Layer: 0
   m_Name: Sugar card
   m_TagString: Untagged
@@ -560,6 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
 --- !u!114 &3975254186022643057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,6 +603,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &4590407358528183892
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8107732545929145892}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &8717082450637473715
 GameObject:
   m_ObjectHideFlags: 0

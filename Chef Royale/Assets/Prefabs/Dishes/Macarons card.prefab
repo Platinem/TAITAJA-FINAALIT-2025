@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 6808971766752080728}
   - component: {fileID: 4858337807375400168}
   - component: {fileID: 7222951109718370153}
+  - component: {fileID: -6003570795976023353}
   m_Layer: 0
   m_Name: Macarons card
   m_TagString: Untagged
@@ -336,6 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
 --- !u!114 &4858337807375400168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,6 +396,18 @@ MonoBehaviour:
   staminaText: {fileID: 8374629572636709969}
   foodQuality: 54
   staminaUsage: 40
+--- !u!225 &-6003570795976023353
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463885846324034304}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1869782116014810803
 GameObject:
   m_ObjectHideFlags: 0

@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 9047172859752837232}
   - component: {fileID: 4589939668648807232}
   - component: {fileID: 2650489941377774560}
+  - component: {fileID: 7686376240518777986}
   m_Layer: 0
   m_Name: Wok card
   m_TagString: Untagged
@@ -336,6 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
 --- !u!114 &4589939668648807232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,6 +396,18 @@ MonoBehaviour:
   staminaText: {fileID: 9025334111485581867}
   foodQuality: 15
   staminaUsage: 9
+--- !u!225 &7686376240518777986
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4054901058244782719}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &6971010293748647704
 GameObject:
   m_ObjectHideFlags: 0

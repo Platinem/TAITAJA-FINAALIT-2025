@@ -432,6 +432,7 @@ GameObject:
   - component: {fileID: 488129035352899558}
   - component: {fileID: 3876364445206769958}
   - component: {fileID: 7460034614625313452}
+  - component: {fileID: -7595776923689203342}
   m_Layer: 0
   m_Name: Pepper card
   m_TagString: Untagged
@@ -485,6 +486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
 --- !u!114 &7460034614625313452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,6 +528,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &-7595776923689203342
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5499609254573479493}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &7466090254977284106
 GameObject:
   m_ObjectHideFlags: 0

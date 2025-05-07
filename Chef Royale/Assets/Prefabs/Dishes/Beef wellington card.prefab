@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 5431771176951348590}
   - component: {fileID: 5949108719180337047}
   - component: {fileID: 1818910395719959742}
+  - component: {fileID: -4378810114935760516}
   m_Layer: 0
   m_Name: Beef wellington card
   m_TagString: Untagged
@@ -141,6 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
+  originalTransform: {fileID: 0}
 --- !u!114 &5949108719180337047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +185,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 5431771176951348590}
+          m_TargetAssemblyTypeName: Card, Assembly-CSharp
+          m_MethodName: SelectCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1818910395719959742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +214,18 @@ MonoBehaviour:
   staminaText: {fileID: 8822224222138955319}
   foodQuality: 60
   staminaUsage: 50
+--- !u!225 &-4378810114935760516
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2211716361829825078}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &4149574635178251595
 GameObject:
   m_ObjectHideFlags: 0

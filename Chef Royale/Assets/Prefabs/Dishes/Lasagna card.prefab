@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 3330073959558163378}
   - component: {fileID: 736533767940186259}
   - component: {fileID: 5054495042574682430}
+  - component: {fileID: -420637411064463293}
   m_Layer: 0
   m_Name: Lasagna card
   m_TagString: Untagged
@@ -696,6 +697,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
+  originalTransform: {fileID: 0}
 --- !u!114 &736533767940186259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,6 +740,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 3330073959558163378}
+          m_TargetAssemblyTypeName: Card, Assembly-CSharp
+          m_MethodName: SelectCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &5054495042574682430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,3 +769,15 @@ MonoBehaviour:
   staminaText: {fileID: 7552468927583138893}
   foodQuality: 45
   staminaUsage: 37
+--- !u!225 &-420637411064463293
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069921547345982711}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0

@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 5486994211408459051}
   - component: {fileID: 7749952876241454594}
   - component: {fileID: 1722235533890550445}
+  - component: {fileID: 1972892543200417634}
   m_Layer: 0
   m_Name: Salt card
   m_TagString: Untagged
@@ -410,6 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
 --- !u!114 &1722235533890550445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,6 +453,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &1972892543200417634
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205339765780208188}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &6988881177776273388
 GameObject:
   m_ObjectHideFlags: 0

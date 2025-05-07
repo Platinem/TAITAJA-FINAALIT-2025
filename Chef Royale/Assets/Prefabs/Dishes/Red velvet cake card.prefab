@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1212610768675652068}
   - component: {fileID: 7865784958945077704}
   - component: {fileID: -4884443901943308518}
+  - component: {fileID: -6853885973971575188}
   m_Layer: 0
   m_Name: Red velvet cake card
   m_TagString: Untagged
@@ -66,6 +67,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
 --- !u!114 &7865784958945077704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,6 +126,18 @@ MonoBehaviour:
   staminaText: {fileID: 1084677440861842415}
   foodQuality: 42
   staminaUsage: 26
+--- !u!225 &-6853885973971575188
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915923711443728299}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &2982648239779280917
 GameObject:
   m_ObjectHideFlags: 0

@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 7546444482788248100}
   - component: {fileID: 7401186324443616833}
   - component: {fileID: 4666097981126336608}
+  - component: {fileID: -9118750965636926153}
   m_Layer: 0
   m_Name: Cheese cake card
   m_TagString: Untagged
@@ -486,6 +487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
+  isSelected: 0
+  originalTransform: {fileID: 0}
 --- !u!114 &7401186324443616833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +530,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 7546444482788248100}
+          m_TargetAssemblyTypeName: Card, Assembly-CSharp
+          m_MethodName: SelectCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &4666097981126336608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,6 +559,18 @@ MonoBehaviour:
   staminaText: {fileID: 1298686731650284209}
   foodQuality: 26
   staminaUsage: 20
+--- !u!225 &-9118750965636926153
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6484631966324780123}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &6781172711206498150
 GameObject:
   m_ObjectHideFlags: 0
