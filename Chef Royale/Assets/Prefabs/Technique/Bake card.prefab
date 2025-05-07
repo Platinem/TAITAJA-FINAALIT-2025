@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 1976064249137257400}
   - component: {fileID: 4764906707204035417}
   - component: {fileID: 7984435383530069719}
+  - component: {fileID: 7261078882065715002}
   m_Layer: 0
   m_Name: Bake card
   m_TagString: Untagged
@@ -240,6 +241,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &7261078882065715002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954974336265932741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db490cab2b34ac448a779fae26cf18e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  staminaUsage: 8
+  staminaText: {fileID: 3917353808666045285}
 --- !u!1 &2643352562512964785
 GameObject:
   m_ObjectHideFlags: 0

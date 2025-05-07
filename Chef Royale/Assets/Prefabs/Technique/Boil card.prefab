@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 4209592778179795024}
   - component: {fileID: 8083560531565723471}
   - component: {fileID: 8435187451878649570}
+  - component: {fileID: 7934072469758895189}
   m_Layer: 0
   m_Name: Boil card
   m_TagString: Untagged
@@ -180,6 +181,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &7934072469758895189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930164582349228105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db490cab2b34ac448a779fae26cf18e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  staminaUsage: 7
+  staminaText: {fileID: 4521756980873020388}
 --- !u!1 &2339171940294403829
 GameObject:
   m_ObjectHideFlags: 0

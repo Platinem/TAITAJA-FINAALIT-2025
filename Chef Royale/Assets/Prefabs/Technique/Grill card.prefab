@@ -507,6 +507,7 @@ GameObject:
   - component: {fileID: 7744863406300491607}
   - component: {fileID: 1051940158386216782}
   - component: {fileID: 1774331216976570436}
+  - component: {fileID: -3197694583689348840}
   m_Layer: 0
   m_Name: Grill card
   m_TagString: Untagged
@@ -600,3 +601,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &-3197694583689348840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7601518544703058489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db490cab2b34ac448a779fae26cf18e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  staminaUsage: 9
+  staminaText: {fileID: 593261684352078171}

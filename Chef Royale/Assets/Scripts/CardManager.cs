@@ -43,7 +43,7 @@ public class CardManager : MonoBehaviour
     // Randomize and select 3 cards in your specified deck
     public void Shuffle(List<Card> deck, int amount)
     {
-        for (i = 0; i < amount;)
+        for (i = 0; i < amount; i++)
         {
             DrawCard(deck);
         }
@@ -65,8 +65,6 @@ public class CardManager : MonoBehaviour
                 availableCardSlots[i] = false;
                 discardPile.Add(randomCard);
                 dishDeck.Remove(randomCard);
-                
-                i++;
             }
         }
     }
@@ -81,16 +79,15 @@ public class CardManager : MonoBehaviour
                 stage += 1;
                 return;
             case 1:
-                Shuffle(seasoningDeck, 2);
-                stage += 1;
-                gameManager.AddSeasoning();
-                return;
-            case 2:
                 Shuffle(equipmentDeck, 2);
                 stage += 1;
                 return;
-            case 3:
+            case 2:
                 Shuffle(techniquesDeck, 2);
+                stage += 1;
+                return;
+            case 3:
+                Shuffle(seasoningDeck, 2);
                 stage += 1;
                 return;
         }

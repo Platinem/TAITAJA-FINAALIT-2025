@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 4135278999638530468}
   - component: {fileID: 3298150609251718127}
   - component: {fileID: 1935645636860439285}
+  - component: {fileID: 600310601421438154}
   m_Layer: 0
   m_Name: Fry card
   m_TagString: Untagged
@@ -465,6 +466,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &600310601421438154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223127730735575063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db490cab2b34ac448a779fae26cf18e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  staminaUsage: 11
+  staminaText: {fileID: 1686847334313371225}
 --- !u!1 &6231534754915020648
 GameObject:
   m_ObjectHideFlags: 0

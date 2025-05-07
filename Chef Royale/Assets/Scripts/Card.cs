@@ -20,6 +20,16 @@ public class Card : MonoBehaviour
             hasBeenUsed = true;
 
             cardManager.finalDish.Add(this);
+            if (cardManager.finalDish.Count == 2)
+            {
+                gameManager.AddSeasoning();
+            }
+
+            else if (cardManager.finalDish.Count == 1)
+            {
+                gameManager.AddDish();
+            }
+
             for (int i = 0; i < cardManager.discardPile.Count; i++)
             {
                 if (cardManager.discardPile[i].isActiveAndEnabled)
