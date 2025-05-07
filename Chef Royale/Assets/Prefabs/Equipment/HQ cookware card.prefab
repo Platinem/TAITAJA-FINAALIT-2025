@@ -358,6 +358,7 @@ GameObject:
   - component: {fileID: 6505701796334905910}
   - component: {fileID: 5548596232658753453}
   - component: {fileID: 3198295257057312775}
+  - component: {fileID: 1968933483674015057}
   m_Layer: 0
   m_Name: HQ cookware card
   m_TagString: Untagged
@@ -478,6 +479,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &1968933483674015057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7455420938353747440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf947a2f3bc2454bb38fcc6bfd4d18e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
 --- !u!1 &8509789034295312826
 GameObject:
   m_ObjectHideFlags: 0

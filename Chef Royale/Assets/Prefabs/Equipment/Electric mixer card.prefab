@@ -568,6 +568,7 @@ GameObject:
   - component: {fileID: 8516026063932027393}
   - component: {fileID: 8800359271397708847}
   - component: {fileID: -2516258517686110588}
+  - component: {fileID: -4007481293256229236}
   m_Layer: 0
   m_Name: Electric mixer card
   m_TagString: Untagged
@@ -688,6 +689,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &-4007481293256229236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6168196468455291794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf947a2f3bc2454bb38fcc6bfd4d18e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
 --- !u!1 &6469103816856266584
 GameObject:
   m_ObjectHideFlags: 0

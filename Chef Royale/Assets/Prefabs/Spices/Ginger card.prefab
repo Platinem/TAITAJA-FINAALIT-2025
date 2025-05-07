@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 7280178113848427113}
   - component: {fileID: 5969498878654509816}
   - component: {fileID: 2753072900857708049}
+  - component: {fileID: -5597771192030908238}
   m_Layer: 0
   m_Name: Ginger card
   m_TagString: Untagged
@@ -541,6 +542,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &-5597771192030908238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4749832157536021373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5734b6d79019a9e408d4ad3a5817459e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 4
 --- !u!1 &8449215571632780979
 GameObject:
   m_ObjectHideFlags: 0

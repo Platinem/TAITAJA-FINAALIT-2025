@@ -24,6 +24,6 @@ public class Dish : MonoBehaviour
     private void OnEnable()
     {
         staminaText.text = staminaUsage.ToString("f0");
-        foodQualityText.text = foodQuality.ToString("f0");
+        foodQualityText.text = "rating: " + foodQuality.ToString("f0");
     }
 }

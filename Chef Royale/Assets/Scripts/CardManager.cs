@@ -60,6 +60,7 @@ public class CardManager : MonoBehaviour
 
             if (cardSlots[i] && i <= availableCardSlots.Length)
             {
+                Instantiate(randomCard);
                 randomCard.gameObject.SetActive(true);
                 randomCard.transform.position = cardSlots[i].position;
                 availableCardSlots[i] = false;

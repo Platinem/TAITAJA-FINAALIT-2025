@@ -358,6 +358,7 @@ GameObject:
   - component: {fileID: 508604042637204952}
   - component: {fileID: 4708788793244211209}
   - component: {fileID: -6818173240484484801}
+  - component: {fileID: -7384054208943110803}
   m_Layer: 0
   m_Name: Sharp knife card
   m_TagString: Untagged
@@ -478,6 +479,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &-7384054208943110803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827137538119569686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf947a2f3bc2454bb38fcc6bfd4d18e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 5
 --- !u!1 &7891714055826514636
 GameObject:
   m_ObjectHideFlags: 0

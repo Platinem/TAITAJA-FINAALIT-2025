@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1027088076694553642}
   - component: {fileID: 429565895278454832}
   - component: {fileID: 4240199362239428757}
+  - component: {fileID: 7186278222577291829}
   m_Layer: 0
   m_Name: Cookbook card
   m_TagString: Untagged
@@ -121,6 +122,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &7186278222577291829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2339202349634996227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf947a2f3bc2454bb38fcc6bfd4d18e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!1 &3436187773604949470
 GameObject:
   m_ObjectHideFlags: 0
