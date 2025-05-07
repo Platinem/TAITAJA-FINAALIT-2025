@@ -142,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasBeenUsed: 0
   isSelected: 0
+  originalTransform: {fileID: 0}
 --- !u!114 &8435187451878649570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,9 +172,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
-          m_MethodName: StartStage
+        - m_Target: {fileID: 8083560531565723471}
+          m_TargetAssemblyTypeName: Card, Assembly-CSharp
+          m_MethodName: SelectCard
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
