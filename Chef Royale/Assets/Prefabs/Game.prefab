@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4673429783717854167}
   - component: {fileID: 8664134354374611396}
   - component: {fileID: 8385000913407343032}
+  - component: {fileID: 6544747877040742440}
   m_Layer: 5
   m_Name: dishSelectText
   m_TagString: Untagged
@@ -135,6 +136,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!111 &6544747877040742440
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792057123055500317}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7e73029ce62a0804383964b51bf70fe2, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7e73029ce62a0804383964b51bf70fe2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2247487422282178653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,6 +1387,7 @@ GameObject:
   - component: {fileID: 1585431574287852660}
   - component: {fileID: 1688876579098947865}
   - component: {fileID: 7247908273132636366}
+  - component: {fileID: 8022341094776591980}
   m_Layer: 5
   m_Name: dishSelectText
   m_TagString: Untagged
@@ -1494,6 +1512,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!111 &8022341094776591980
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5316212017826173306}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7e73029ce62a0804383964b51bf70fe2, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7e73029ce62a0804383964b51bf70fe2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5759781537089903181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,6 +2160,7 @@ GameObject:
   - component: {fileID: 5339796212082894163}
   - component: {fileID: 3235192581795728351}
   - component: {fileID: 3840966385671550612}
+  - component: {fileID: 9184494178501746477}
   m_Layer: 5
   m_Name: dishSelectText
   m_TagString: Untagged
@@ -2250,6 +2285,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!111 &9184494178501746477
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6471659648679209249}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7e73029ce62a0804383964b51bf70fe2, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7e73029ce62a0804383964b51bf70fe2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &7196256954730667566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,6 +2484,7 @@ GameObject:
   - component: {fileID: 1122461673680605760}
   - component: {fileID: 4773794255804216030}
   - component: {fileID: 5856700898659601685}
+  - component: {fileID: 1736143221438576083}
   m_Layer: 5
   m_Name: dishSelectText
   m_TagString: Untagged
@@ -2557,6 +2609,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!111 &1736143221438576083
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8212535141393781237}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 7e73029ce62a0804383964b51bf70fe2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8242104895030771046
 GameObject:
   m_ObjectHideFlags: 0
