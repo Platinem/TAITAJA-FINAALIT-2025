@@ -62,11 +62,20 @@ public class CardManager : MonoBehaviour
 
             if (cardSlots[i] && i < availableCardSlots.Length)
             {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 Card spawnedCard = Instantiate(randomCard, Vector3.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Game").transform);
                 discardPile.Add(spawnedCard);
                 spawnedCard.gameObject.SetActive(true);
                 spawnedCard.transform.position = cardSlots[i].position;
                 spawnedCard.transform.localScale *= 1.6f;
+=======
+=======
+>>>>>>> Stashed changes
+                Instantiate(randomCard, Vector3.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Game").transform);
+                randomCard.gameObject.SetActive(true);
+                randomCard.transform.position = cardSlots[i].position;
+>>>>>>> Stashed changes
                 availableCardSlots[i] = false;
                 deck.Remove(randomCard);
             }
