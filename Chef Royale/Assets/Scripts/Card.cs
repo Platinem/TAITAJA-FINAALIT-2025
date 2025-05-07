@@ -32,6 +32,8 @@ public class Card : MonoBehaviour
         cardManager = FindObjectOfType<CardManager>();
         gameManager = FindObjectOfType<GameManager>();
         deckManager = FindObjectOfType<DeckManager>();
+
+        cg.alpha = 1;
     }
 
     public void UseCard() 
@@ -42,9 +44,19 @@ public class Card : MonoBehaviour
             hasBeenUsed = true;
 
             cardManager.finalDish.Add(this);
-            if (cardManager.finalDish.Count == 2)
+            if (cardManager.finalDish.Count == 4)
             {
                 gameManager.AddSeasoning();
+            }
+
+            else if (cardManager.finalDish.Count == 3)
+            {
+                gameManager.AddEquipment();
+            }
+
+            else if (cardManager.finalDish.Count == 2)
+            {
+                gameManager.AddTechnique();
             }
 
             else if (cardManager.finalDish.Count == 1)
@@ -52,7 +64,7 @@ public class Card : MonoBehaviour
                 gameManager.AddDish();
             }
 
-            for (int i = 0; i < cardManager.discardPile.Count; i++)
+            /*for (int i = 0; i < cardManager.discardPile.Count; i++)
             {
                 if (cardManager.discardPile[i].isActiveAndEnabled)
                 {
@@ -61,6 +73,7 @@ public class Card : MonoBehaviour
             }
 
             cardManager.discardPile.Clear();
+            */
         }
     }
 
@@ -68,6 +81,8 @@ public class Card : MonoBehaviour
     {
         if (!isSelected && !gameManager.gameStarted)
         {
+            isSelected = true;
+            deckManager.CanStartGame();
             //deckManager.PlaceCardInDeck(this);
 
             if (this.GetComponent<Dish>() != null && deckManager.maxDishCards > cardManager.dishDeck.Count)
@@ -97,13 +112,14 @@ public class Card : MonoBehaviour
                 cardManager.techniquesDeck.Add(this);
                 cg.alpha = 0.4f;
             }
-
         }
 
         else
         {
+            isSelected = false;
+            deckManager.CanStartGame();
             //deckManager.RemoveCardFromDeck(this);
-            
+
             if (this.GetComponent<Dish>() != null)
             {
                 isSelected = false;

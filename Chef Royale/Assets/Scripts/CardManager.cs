@@ -18,6 +18,7 @@ public class CardManager : MonoBehaviour
     private int i;
     private int stage;
     private GameManager gameManager;
+    public Transform trash;
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -54,18 +55,20 @@ public class CardManager : MonoBehaviour
     // Draws a card from a specified list and removes it from the list
     public void DrawCard(List<Card> deck)
     {
-        if (deck != null)
+        if (deck.Count != 0)
         {
             Card randomCard = deck[Random.Range(0, deck.Count)];
+            Debug.Log(randomCard);
 
-            if (cardSlots[i] && i <= availableCardSlots.Length)
+            if (cardSlots[i] && i < availableCardSlots.Length)
             {
-                Instantiate(randomCard);
-                randomCard.gameObject.SetActive(true);
-                randomCard.transform.position = cardSlots[i].position;
+                Card spawnedCard = Instantiate(randomCard, Vector3.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Game").transform);
+                discardPile.Add(spawnedCard);
+                spawnedCard.gameObject.SetActive(true);
+                spawnedCard.transform.position = cardSlots[i].position;
+                spawnedCard.transform.localScale *= 1.6f;
                 availableCardSlots[i] = false;
-                discardPile.Add(randomCard);
-                dishDeck.Remove(randomCard);
+                deck.Remove(randomCard);
             }
         }
     }
@@ -76,21 +79,56 @@ public class CardManager : MonoBehaviour
         switch (stage)
         {
             case 0:
+                gameManager.dish.SetActive(true);
+                ClearDiscardPile();
                 Shuffle(dishDeck, 3);
                 stage += 1;
                 return;
             case 1:
-                Shuffle(equipmentDeck, 2);
-                stage += 1;
-                return;
-            case 2:
+                gameManager.dish.SetActive(false);
+                gameManager.technique.SetActive(true);
+                ClearDiscardPile();
                 Shuffle(techniquesDeck, 2);
                 stage += 1;
                 return;
-            case 3:
-                Shuffle(seasoningDeck, 2);
+            case 2:
+                gameManager.equipment.SetActive(true);
+                gameManager.technique.SetActive(false);
+                ClearDiscardPile();
+                Shuffle(equipmentDeck, 2);
+               
                 stage += 1;
                 return;
+            case 3:
+                gameManager.seasoning.SetActive(true);
+                gameManager.equipment.SetActive(false);
+
+                ClearDiscardPile();
+                Shuffle(seasoningDeck, 2);
+                
+                stage += 1;
+                return;
+            case 4:
+                ClearDiscardPile();
+                gameManager.seasoning.SetActive(false);
+                gameManager.EndGame();
+
+                return;
+
         }
+    }
+
+    public void ClearDiscardPile()
+    {
+        for (int i = 0; i < discardPile.Count; i++)
+        {
+            if (discardPile[i].isActiveAndEnabled)
+            {
+                discardPile[i].gameObject.GetComponent<CanvasGroup>().alpha = 0f;
+                discardPile[i].gameObject.transform.position = trash.position;
+            }
+        }
+
+        discardPile.Clear();
     }
 }

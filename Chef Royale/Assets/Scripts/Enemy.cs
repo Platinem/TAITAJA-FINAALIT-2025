@@ -8,8 +8,6 @@ public class Enemy : MonoBehaviour
 {
     private GameManager gameManager;
     private CardManager cardManager;
-    public SeasoningType seasoningType;
-    public TechniqueType techniqueType;
 
     public TMP_Text dishText;
     public TMP_Text ratingText;
@@ -21,7 +19,7 @@ public class Enemy : MonoBehaviour
 
     public float maxStamina;
     public float stamina;
-    private float h;
+    public float h;
 
     public float staminaUsage;
 
@@ -33,17 +31,26 @@ public class Enemy : MonoBehaviour
 
     public void CreateOpponent()
     {
+        MakeDish();
+    }
+
+    public void ResetOpponent()
+    {
+        h = 25;
+        staminaUsage = 80f;
         stamina = maxStamina;
+        MakeDish();
     }
 
     public void MakeDish()
     {
-        h = 20;
         float i = stamina;
-        i -= Random.Range(h, staminaUsage);
-        dishRating = i;
-        staminaUsage -= i;
-        if (i <= 30)
+        float randomDishScore = Random.Range(h, staminaUsage);
+        dishRating = randomDishScore;
+        staminaUsage *= 0.9f;
+        stamina -= randomDishScore;
+
+        if (randomDishScore <= 30)
         {
             h = 40;
         }
@@ -53,16 +60,19 @@ public class Enemy : MonoBehaviour
         CreateTechnique();
 
         dishText.text = "OPPONENT'S DISH: " + techniqueName + " " + seasoningName + " " + dishName;
-        ratingText.text = "OPPONENT'S RATING:";
+        ratingText.text = "OPPONENT'S RATING: " + dishRating.ToString("f0");
     }
 
     public void Update()
     {
-        
-
         if (Input.GetKeyDown(KeyCode.B))
         {
             CreateOpponent();
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            ResetOpponent();
         }
     }
 

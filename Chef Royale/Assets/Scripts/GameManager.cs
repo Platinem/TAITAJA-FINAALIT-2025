@@ -2,20 +2,62 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     CardManager cardManager;
+    DeckManager deckManager;
+    Enemy opponent;
     public float dishScore;
     public float stamina;
     public bool gameStarted;
+    public bool roundEnded;
+    public GameObject menu;
+    public GameObject game;
+    public GameObject roundEnd;
+    public GameObject dish;
+    public GameObject technique;
+    public GameObject equipment;
+    public GameObject seasoning;
+
+    public TMP_Text enemyDish;
+    public TMP_Text enemyRating;
+
+    public TMP_Text playerDish;
+    public TMP_Text playerRating;
     void Start()
     {
         cardManager = FindObjectOfType<CardManager>();
+        deckManager = FindObjectOfType<DeckManager>();
+        opponent = FindObjectOfType<Enemy>();
     }
 
-    // Calculates how much score your dish will have after you choose your seasoning
+    public void StartGame()
+    {
+        if (deckManager.CanStartGame())
+        {
+            game.SetActive(true);
+            gameStarted = true;
+            menu.SetActive(false);
 
+            opponent.ResetOpponent();
+            cardManager.StartStage();
+        }
+    }
+
+    public void EndGame()
+    {
+        if (gameStarted && !roundEnded)
+        {
+            roundEnded = true;
+            roundEnd.SetActive(true);
+            enemyDish.text = "Opponent's Dish: " + opponent.dishName.ToString();
+            enemyRating.text = "Opponent's rating: " + opponent.dishRating.ToString("f0");
+
+            playerRating.text = "Your rating: " + dishScore.ToString("f0");
+        }
+    }
     public void AddDish()
     {
         Dish dish = cardManager.finalDish[0].gameObject.GetComponent<Dish>();
@@ -25,8 +67,8 @@ public class GameManager : MonoBehaviour
     {
         Dish dish = cardManager.finalDish[0].gameObject.GetComponent<Dish>();
         Seasoning seasoning = cardManager.finalDish[3].gameObject.GetComponent<Seasoning>();
-        Technique technique = cardManager.finalDish[2].gameObject.GetComponent<Technique>();
-        Equipment equipment = cardManager.finalDish[1].gameObject.GetComponent<Equipment>();
+        Technique technique = cardManager.finalDish[1].gameObject.GetComponent<Technique>();
+        Equipment equipment = cardManager.finalDish[2].gameObject.GetComponent<Equipment>();
 
         switch (dish.type)
         {
@@ -325,9 +367,8 @@ public class GameManager : MonoBehaviour
     public void AddEquipment()
     {
         Dish dish = cardManager.finalDish[0].gameObject.GetComponent<Dish>();
-        Seasoning seasoning = cardManager.finalDish[3].gameObject.GetComponent<Seasoning>();
-        Technique technique = cardManager.finalDish[2].gameObject.GetComponent<Technique>();
-        Equipment equipment = cardManager.finalDish[1].gameObject.GetComponent<Equipment>();
+        Technique technique = cardManager.finalDish[1].gameObject.GetComponent<Technique>();
+        Equipment equipment = cardManager.finalDish[2].gameObject.GetComponent<Equipment>();
 
         dishScore = dish.foodQuality;
 
@@ -363,9 +404,7 @@ public class GameManager : MonoBehaviour
     public void AddTechnique()
     {
         Dish dish = cardManager.finalDish[0].gameObject.GetComponent<Dish>();
-        Seasoning seasoning = cardManager.finalDish[3].gameObject.GetComponent<Seasoning>();
-        Technique technique = cardManager.finalDish[2].gameObject.GetComponent<Technique>();
-        Equipment equipment = cardManager.finalDish[1].gameObject.GetComponent<Equipment>();
+        Technique technique = cardManager.finalDish[1].gameObject.GetComponent<Technique>();
 
         dishScore -= dish.foodQuality;
 

@@ -58,12 +58,4 @@ public class DeckManager : MonoBehaviour
             return false;
         }
     }
-
-    public void GameStartable()
-    {
-        TMP_Text playText = GameObject.FindWithTag("Play").GetComponent<TMP_Text>();
-
-        playText.color = Color.gray;
-        playText.alpha = 0.8F;
-    }
 }
