@@ -29,7 +29,7 @@ RectTransform:
   m_GameObject: {fileID: 1915923711443728299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 540.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.85, y: 1.85, z: 1.85}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4910746802358377751}
@@ -120,10 +120,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  foodQualityText: {fileID: 0}
-  staminaText: {fileID: 0}
-  foodQuality: 0
-  staminaUsage: 0
+  foodQualityText: {fileID: 8933593941372151289}
+  staminaText: {fileID: 1084677440861842415}
+  foodQuality: 42
+  staminaUsage: 26
 --- !u!1 &2982648239779280917
 GameObject:
   m_ObjectHideFlags: 0
