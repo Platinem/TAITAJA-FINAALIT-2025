@@ -154,7 +154,11 @@ RectTransform:
   m_Children: []
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Father: {fileID: 3454916548117426670}
+=======
+  m_Father: {fileID: 1959250403}
+>>>>>>> Stashed changes
 =======
   m_Father: {fileID: 1959250403}
 >>>>>>> Stashed changes
@@ -493,7 +497,11 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 349.04373, y: -141}
+=======
+  m_AnchoredPosition: {x: 357.04373, y: -93}
+>>>>>>> Stashed changes
 =======
   m_AnchoredPosition: {x: 357.04373, y: -93}
 >>>>>>> Stashed changes
@@ -733,6 +741,7 @@ MonoBehaviour:
   gameStarted: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   roundEnded: 0
   menu: {fileID: 1734332136}
   game: {fileID: 4309427059373587218}
@@ -745,6 +754,10 @@ MonoBehaviour:
   enemyRating: {fileID: 1127785139}
   playerDish: {fileID: 0}
   playerRating: {fileID: 914551098}
+=======
+  menu: {fileID: 1734332136}
+  game: {fileID: 1024211418}
+>>>>>>> Stashed changes
 =======
   menu: {fileID: 1734332136}
   game: {fileID: 1024211418}
@@ -2500,6 +2513,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &914551096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2639,6 +2653,8 @@ CanvasRenderer:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 --- !u!1 &986323521
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,7 +2687,11 @@ RectTransform:
   m_Children: []
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Father: {fileID: 3454916548117426670}
+=======
+  m_Father: {fileID: 1959250403}
+>>>>>>> Stashed changes
 =======
   m_Father: {fileID: 1959250403}
 >>>>>>> Stashed changes
@@ -2784,7 +2804,10 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &1024211418 stripped
@@ -2794,6 +2817,9 @@ GameObject:
   m_PrefabInstance: {fileID: 1959250402}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -4091,7 +4117,11 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 190.49379, y: -141}
+=======
+  m_AnchoredPosition: {x: 198.49377, y: -93}
+>>>>>>> Stashed changes
 =======
   m_AnchoredPosition: {x: 198.49377, y: -93}
 >>>>>>> Stashed changes
@@ -4658,6 +4688,9 @@ GameObject:
   m_PrefabInstance: {fileID: 2028411724}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -7230,7 +7263,11 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 31, y: -141}
+=======
+  m_AnchoredPosition: {x: 39, y: -93}
+>>>>>>> Stashed changes
 =======
   m_AnchoredPosition: {x: 39, y: -93}
 >>>>>>> Stashed changes
@@ -9280,10 +9317,15 @@ SceneRoots:
   - {fileID: 1220344456}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 3454916548117426670}
   - {fileID: 1856339807}
   - {fileID: 778055031}
   - {fileID: 1379719589}
+=======
+  - {fileID: 1959250402}
+  - {fileID: 1856339807}
+>>>>>>> Stashed changes
 =======
   - {fileID: 1959250402}
   - {fileID: 1856339807}

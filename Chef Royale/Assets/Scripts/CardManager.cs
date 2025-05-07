@@ -64,12 +64,15 @@ public class CardManager : MonoBehaviour
             {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 Card spawnedCard = Instantiate(randomCard, Vector3.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Game").transform);
                 discardPile.Add(spawnedCard);
                 spawnedCard.gameObject.SetActive(true);
                 spawnedCard.transform.position = cardSlots[i].position;
                 spawnedCard.transform.localScale *= 1.6f;
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
                 Instantiate(randomCard, Vector3.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Game").transform);

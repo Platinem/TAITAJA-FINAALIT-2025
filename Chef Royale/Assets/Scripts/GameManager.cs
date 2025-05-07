@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public bool gameStarted;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public bool roundEnded;
     public GameObject menu;
     public GameObject game;
@@ -36,6 +37,10 @@ public class GameManager : MonoBehaviour
     public GameObject menu;
     public GameObject game;
 >>>>>>> Stashed changes
+=======
+    public GameObject menu;
+    public GameObject game;
+>>>>>>> Stashed changes
     void Start()
     {
         cardManager = FindObjectOfType<CardManager>();
@@ -49,9 +54,15 @@ public class GameManager : MonoBehaviour
         {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             game.SetActive(true);
             gameStarted = true;
             menu.SetActive(false);
+=======
+            gameStarted = true;
+            menu.SetActive(false);
+            game.SetActive(true);
+>>>>>>> Stashed changes
 =======
             gameStarted = true;
             menu.SetActive(false);
@@ -69,6 +80,7 @@ public class GameManager : MonoBehaviour
     }
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     public void EndGame()
     {
@@ -82,6 +94,8 @@ public class GameManager : MonoBehaviour
             playerRating.text = "Your rating: " + dishScore.ToString("f0");
         }
     }
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======

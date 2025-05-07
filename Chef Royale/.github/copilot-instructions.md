@@ -7,5 +7,8 @@
   - Name: Beef wellington card(Clone)
   - Tag: Untagged
   - Layer: Default
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
